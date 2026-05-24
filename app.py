@@ -1,4 +1,17 @@
 import streamlit as st
+
+st.set_page_config(
+    page_title="Free ODE Solver Online - Solve Differential Equations",
+    page_icon="📐",
+    layout="centered",
+    menu_items={
+        'About': "Free online tool to solve ordinary differential equations. Supports separable, linear, Bernoulli, exact, and second order ODEs."
+    }
+)
+
+st.title("Free ODE Solver")
+st.markdown("**Solve differential equations instantly.** Enter your ODE below:")
+st.markdown("---")
 from sympy import *
 from sympy.parsing.sympy_parser import parse_expr, standard_transformations, implicit_multiplication_application
 
